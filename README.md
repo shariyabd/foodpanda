@@ -64,7 +64,7 @@ php artisan migrate
 ### 4. Start the development server
 
 ```bash
-composer run dev
+php artisan serve --port=8002
 ```
 
 This starts the Laravel server, queue worker, log watcher, and Vite asset compiler concurrently.
