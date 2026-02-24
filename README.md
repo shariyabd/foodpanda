@@ -14,7 +14,7 @@ A Laravel-based client application that authenticates users via a central SSO (S
 ### 1. Clone & install dependencies
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:shariyabd/foodpanda.git
 cd foodpanda
 composer install
 npm install
