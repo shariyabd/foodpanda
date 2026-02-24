@@ -2,15 +2,18 @@
 
 namespace App\Providers;
 
+use App\Services\SsoService;
 use Illuminate\Support\ServiceProvider;
 
-class AppServiceProvider extends ServiceProvider
+class SsoServiceProvider extends ServiceProvider
 {
     
 
     public function register(): void
     {
-        
+        $this->app->singleton(SsoService::class, function () {
+            return new SsoService();
+        });
     }
 
     
